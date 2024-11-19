@@ -1,4 +1,4 @@
-# Real-Time-Wake-Word-Detection
+# Real Time Wake Word Detection
 Real-time wake word detection using TensorFlow Lite with MFCC feature extraction and silence handling.
 
 This project implements a real-time Wake Word Detection system using machine learning and TFLite models for efficient inference on edge devices. The system uses audio data to continuously monitor the environment and detect whether a predefined "Wake Word" has been spoken. It utilizes **MFCC (Mel Frequency Cepstral Coefficients)** features and a **Convolutional Neural Network (CNN)** model to classify the audio segments as either "Wake Word Detected" or "Wake Word NOT Detected."
