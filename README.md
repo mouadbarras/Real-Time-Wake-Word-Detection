@@ -11,6 +11,7 @@ This project implements a real-time Wake Word Detection system using machine lea
 - [Contributing](#contributing)
 - [License](#license)
 - [Authors](#authors)
+- [Contact Us](#contactus)
 
 
 ## Project Description
@@ -83,3 +84,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 This project was developed by **Mouad BARRAS** and **Khadija MAATI**.
 
 If you have any questions or suggestions, feel free to contact us!
+
+## Contact Us
+LinkedIn [Mouad BARRAS](https://www.linkedin.com/in/mouad-barras/) [Khadija MAATI](https://www.linkedin.com/in/khadija-maati-5174bb334/)
+
+
+
