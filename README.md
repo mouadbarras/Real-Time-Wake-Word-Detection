@@ -10,6 +10,8 @@ This project implements a real-time Wake Word Detection system using machine lea
 - [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
+- [Authors](#authors)
+
 
 ## Project Description
 The Wake Word Detection system works by continuously recording audio and feeding it into a trained CNN model. The model classifies each 1-second audio segment, and if it detects the Wake Word, it triggers an action. This system is designed to be lightweight and can be deployed on embedded systems with TensorFlow Lite (TFLite) for efficient real-time performance.
@@ -24,34 +26,34 @@ Key steps involved:
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/real-time-wake-word-detection.git
+   git clone https://github.com/mouadbarras/real-time-wake-word-detection.git
    cd real-time-wake-word-detection
    ```
 
 2. **Install dependencies**:
-   You will need Python 3 and the following libraries:
+   You will need Python 3.11 and the following libraries:
    ```bash
    pip install tensorflow librosa sounddevice numpy scikit-learn matplotlib
    ```
 
-3. **Download or Record Audio Data**:
+3. **Download or Record your own Audio Data**:
    - You can either record your own audio data using the provided scripts or use the included sample audio files in the `audio_data/` and `background_sound/` folders.
    
 4. **Train the Model**:
-   Use the provided `WWRTD.ipynb` notebook or script to preprocess the data, train the model, and convert it to TFLite format.
+   Use the provided `Train.ipynb` notebook to preprocess the data, train the model, and convert it to TFLite format.
 
    ```bash
-   python train_model.py
+   jupyter nbconvert --to notebook --execute Train.ipynb
    ```
 
 5. **Deploy the Model**:
    - Use the TFLite model for real-time wake word detection on your microphone input.
 
 ## How to Use
-Once the model is trained and saved as a TFLite file (e.g., `WWD.tflite`), use the `real_time_detection.py` script to run the system and detect the Wake Word in real-time.
+Once the model is trained and saved as a TFLite file (e.g., `WWD.tflite`), use the `WWRTD.ipynb` notebook or convert it to script python file (.py) to run the system and detect the Wake Word in real-time.
 
 ```bash
-python real_time_detection.py
+upyter nbconvert --to notebook --execute WWRTD.ipynb
 ```
 
 The system will continuously record audio, process it in chunks, and output a detection result (`Wake Word Detected` or `Wake Word NOT Detected`). Press `Ctrl+C` to stop the detection.
@@ -59,8 +61,7 @@ The system will continuously record audio, process it in chunks, and output a de
 ### Example Output:
 ```text
 Recording... Press i deux fois to stop.
-.....
-Wake Word Detected: 1
+---..-.-.-1--...-1.----.....
 ```
 
 ## Results
@@ -69,11 +70,16 @@ Here is an example of how the model performs on an audio segment:
 ![Waveform and MFCC Visualization](/result_image.png)
 
 ### Performance:
-- **Accuracy**: The model achieved an accuracy of X% on the test set.
-- **Inference Time**: The TFLite model performs inference in less than X milliseconds per sample on a Raspberry Pi.
+- **Accuracy**: The model achieved an accuracy of 98% on the test set.
+- TFLite Supports a number of environments including Raspberry pi, Android, and IOS...
 
 ## Contributing
 We welcome contributions to improve this project. Feel free to fork the repository, create a branch, and submit pull requests. Please ensure that your code follows the existing coding style and includes appropriate tests.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Authors
+This project was developed by **Mouad BARRAS** and **Khadija MAATI**.
+
+If you have any questions or suggestions, feel free to contact us!
