@@ -66,7 +66,7 @@ Wake Word Detected: 1
 ## Results
 Here is an example of how the model performs on an audio segment:
 
-![Waveform and MFCC Visualization](path_to_image/result_image.png)
+![Waveform and MFCC Visualization](/result_image.png)
 
 ### Performance:
 - **Accuracy**: The model achieved an accuracy of X% on the test set.
