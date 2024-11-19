@@ -11,7 +11,7 @@ This project implements a real-time Wake Word Detection system using machine lea
 - [Contributing](#contributing)
 - [License](#license)
 - [Authors](#authors)
-- [Contact Us](#contactus)
+- [Contact Us](#contact-us)
 
 
 ## Project Description
